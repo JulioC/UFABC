@@ -1,0 +1,2 @@
+No caso médio da função MinMax2, uma metade dos elementos está em ordem decrescente e a outra crescente, portanto, a segunda comparação é realizada apenas em metade dos elementos, então teremos:
+f(n) = n-1 + (n-1)/2 = (3/2)(n-2)

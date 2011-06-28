@@ -1,0 +1,40 @@
+-------------------------
+-- Em Oderm -------------
+-------------------------
+
+ABCDEFGHI
+
++ push F B A
+^ pop A
+^ pop B
++ push D C
+^ pop C
+^ pop D
++ push E
+^ pop E
+^ pop F
++ push G
+^ pop G
++ push I H
+^ pop H
+^ pop I
+
+-------------------------
+-- Pós Ordem ------------
+-------------------------
+
+ACEDBHIGF
+
++ push F B A
+^ pop A
++ push D C
+^ pop C
++ push E
+^ pop E
+^ pop D
+^ pop B
++ push G I H
+^ pop H
+^ pop I
+^ pop G
+^ pop F
