@@ -13,8 +13,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(void) {
-  int i, j, dim, dimq;
+int main(int argc, char *argv[]) {
+  int a, b, i, j, k, dim, dimq;
   int *nodes = NULL;
   int *paths = NULL;
   
@@ -61,7 +61,7 @@ int main(void) {
     for(i = 0; i < dim; i++) {
       for(j = 0; j < dim; j++) {
         a = paths[(i * dim) + j];
-        b = (paths[(i * dim) + k] < 0 || paths[(k * dim) + j] < 0) ? -1 : (paths[(i * dim) + k)] + paths[(k * dim) + j]);
+        b = (paths[(i * dim) + k] < 0 || paths[(k * dim) + j] < 0) ? -1 : (paths[(i * dim) + k] + paths[(k * dim) + j]);
         
         if((a < b && a >= 0) || b < 0) {
           paths[(i * dim) + j] = a;
@@ -74,7 +74,7 @@ int main(void) {
   }
   
   for(i = 0; i < dimq ; i++) {
-    printf("%4d ", paths[i]);
+    printf("%d ", paths[i]);
     if(!((i+1) % dim)) {
       printf("\n");
     }
