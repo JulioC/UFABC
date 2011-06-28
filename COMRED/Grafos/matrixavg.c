@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
     sum += aux;
   }
   
-  printf("%d", (sum/dim));
+  printf("%d", (sum/dimq));
   
   return 0;
 }
